@@ -42,8 +42,10 @@ If this approach resonates with you, check out my website and see if it’s the 
 <img src="https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/342048ef9f2778ce559275dc5e800df4a2cbb1d9/Basket/Shoelace.png" alt="Shoelace" width="300" />
 
 ### Latest Looks
+
 **Status**
-<img src="https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/main/images/status.png" alt="Status" width="300" />
+
+<img src="https://raw.githubusercontent.com/KenAkatzuki/KenAkatzuki/main/hereandthere/Nara.jpg" alt="Status" width="780" />
 
 Everydays Todays 
 
