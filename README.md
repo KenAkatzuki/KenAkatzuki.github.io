@@ -1,4 +1,4 @@
-[![My Room](https://img.shields.io/badge/My%20Room-%23FF0000.svg?style=for-the-badge&logo=appveyor&logoColor=white)](https://KenAkatzuki.github.io)
+[![My Room](https://img.shields.io/badge/My%20Room-%23FF0000.svg?style=for-the-badge&logo=https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/main/logo.png&logoColor=white)](https://KenAkatzuki.github.io)
 
 # Welcome to KenAkatzuki.github.io
 
@@ -6,7 +6,7 @@ This is my personal website where I showcase my creative projects and ideas.
 
 ## How to Visit
 
-You can visit the live site at [KenAkatzuki.github.io](https://KenAkatzuki.github.io).
+You can visit the live site at by clicking My Room.
 
 ## About This Project
 
