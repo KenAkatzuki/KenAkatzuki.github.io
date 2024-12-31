@@ -42,7 +42,9 @@ If this approach resonates with you, check out my website and see if it’s the 
 <img src="https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/342048ef9f2778ce559275dc5e800df4a2cbb1d9/Basket/Shoelace.png" alt="Shoelace" width="300" />
 
 ### Latest Looks
-**Status**  
+**Status**
+<img src="https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/main/images/status.png" alt="Status" width="300" />
+
 This section will feature my most recent art. Stay tuned for updates!
 
 ---
