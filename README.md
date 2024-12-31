@@ -36,10 +36,10 @@ If this approach resonates with you, check out my website and see if it’s the 
 ## Look Sect
 ### First Looks
 **Shoelace**  
-![Shoelace](https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/main/images/shoelace.png)
+<img src="https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/342048ef9f2778ce559275dc5e800df4a2cbb1d9/Basket/Profile.png" alt="Shoelace" width="300" />
 
 **Profile**  
-![Profile](https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/main/images/logo.png)
+<img src="https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/342048ef9f2778ce559275dc5e800df4a2cbb1d9/Basket/Shoelace.png" alt="Shoelace" width="300" />
 
 ### Latest Looks
 **Status**  
