@@ -45,10 +45,10 @@ If this approach resonates with you, check out my website and see if it’s the 
 **Status**
 <img src="https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/main/images/status.png" alt="Status" width="300" />
 
-This section will feature my most recent art. Stay tuned for updates!
+Everydays Todays 
 
 ---
 
-If you feel like sailing into the unknown or want to learn more about the tools I use, visit my website via the **badge above**. The voyage might be strange, but that’s what makes it fun.
+"The level I am at is zero, and from this vantage point, everything I see feels like the vast expanse of the universe."
 
-Enjoy the ride, and remember: the journey is just as important as the destination.
+---
