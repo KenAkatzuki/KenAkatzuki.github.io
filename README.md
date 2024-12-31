@@ -3,22 +3,50 @@
 # Welcome to Port Nave
 
 Welcome to **Port Nave**, where things are a bit oddly structured.  
-Website hosted by GitHub. Above, there is a badge named **My Room** where the website lies. So, if you want to sail there, you can just click the badge and you’ll be there.  
-But beware—there are many catches before you set sail. Know your place, as there's an **Unknown Being'S Crawling** there, watching for your life (data).
+Website hosted by GitHub. Above, there is a badge named **My Room** where the website lies. So, if you want to sail there, just click the badge, and you’ll be there.  
+But beware—there are many catches before you set sail. Know your place, as there's an **Unknown Being Crawling** there, watching for your life (data).
 
 ## Testing Games In Linux
 
 **Testme117** is my YouTube channel where I test games via **Wine** and **Proton**.  
-Sometimes, I also make gameplay videos.  
-I notify changes in tools and ProtonDB, the respected games forum, when possible.  
-I check in on the community to see where Linux is going in gaming or software (and leave some messages there).
 
-You can find my YouTube channel via the **Yellow Badge** above, or just go through my profile.
+- Sometimes, I also make gameplay videos.  
 
-[![My Room](https://img.shields.io/badge/My%20Room-%23FFCC00.svg?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@larchboy?feature=shared)
+- I notify changes in tools and ProtonDB, the respected games forum, when possible.  
 
-## Explore More
+- I check in on the community to see where Linux is going in gaming or software (and leave some messages there).
 
-If you feel like sailing into the unknown or want to know more about the tools I use, visit my website via the **badge above**. The voyage might be strange, but that’s what makes it fun.
+You can find my YouTube channel via the **Yellow Badge** below, or just go through my profile.
+
+[![Testme117](https://img.shields.io/badge/Testme117-%23FFCC00.svg?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@larchboy?feature=shared)
+
+## Shoelace
+
+**Shoelace** is simply the way I like to do things—free, flexible, and in my own style. It’s about exploring and creating without feeling tied down by unnecessary limits.
+
+If you want to work on something with me or share an idea, here’s how I operate:
+
+- I prefer to deal in **Crypto** because:
+  - It’s the closest I can get to being systemless and free.
+  - It’s universal and secure in its own way (even though nothing is truly safe).
+  - Decentralization is becoming more mainstream, and I’m aligned with that shift.
+
+If this approach resonates with you, check out my website and see if it’s the kind of style you’d like to align with.
+
+## Look Sect
+### First Looks
+**Shoelace**  
+![Shoelace](https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/main/images/shoelace.png)
+
+**Profile**  
+![Profile](https://github.com/KenAkatzuki/KenAkatzuki.github.io/blob/main/images/logo.png)
+
+### Latest Looks
+**Status**  
+This section will feature my most recent art. Stay tuned for updates!
+
+---
+
+If you feel like sailing into the unknown or want to learn more about the tools I use, visit my website via the **badge above**. The voyage might be strange, but that’s what makes it fun.
 
 Enjoy the ride, and remember: the journey is just as important as the destination.
