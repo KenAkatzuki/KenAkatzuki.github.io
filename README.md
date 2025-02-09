@@ -45,7 +45,7 @@ If this approach resonates with you, check out my website and see if it’s the 
 
 **Status**
 
-<img src="https://ibb.co/wZRbP92p" alt="Status" width="780" />
+<a href="https://ibb.co/wZRbP92p"><img src="https://i.ibb.co/wZRbP92p/kkawa.jpg" alt="kkawa" border="0"></a>
 
 Everydays Todays 
 
