@@ -45,7 +45,7 @@ If this approach resonates with you, check out my website and see if it’s the 
 
 **Status**
 
-<img src="https://raw.githubusercontent.com/KenAkatzuki/KenAkatzuki/main/hereandthere/Nara.jpg" alt="Status" width="780" />
+<img src="https://ibb.co/wZRbP92p" alt="Status" width="780" />
 
 Everydays Todays 
 
