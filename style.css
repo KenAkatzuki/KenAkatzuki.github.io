@@ -10,9 +10,9 @@ body, html {
   background-color: lavender;
 }
 
-/* Blurry, semi-transparent nav bar */
+/* Blurry image background for nav bar */
 header {
-  background: rgba(50, 50, 50, 0.5); /* Grey-black transparent */
+  background: url('https://i.ibb.co/whTsrryW/val.png') no-repeat center center/cover;
   backdrop-filter: blur(10px); /* Blurry effect */
   padding: 15px;
   text-align: center;
@@ -73,7 +73,7 @@ h2 {
 
 .artist-pic {
   width: 150px;
-  border-radius: 50%;
+  border-radius: 15px; /* Curved square shape */
   display: block;
   margin: 0 auto 10px;
 }
@@ -96,15 +96,15 @@ h2 {
 }
 
 .art-table td {
-  padding: 10px;
+  padding: 5px; /* Reduced gap */
   text-align: center;
   border: 2px solid black; /* Black border for showcase */
 }
 
 .art-table img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  width: 600px; /* Standardized size */
+  height: 600px;
+  object-fit: cover;
 }
 
 /* Footer styles */
