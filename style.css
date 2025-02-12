@@ -14,7 +14,7 @@ body, html {
 header {
   background: url('https://i.ibb.co/whTsrryW/val.png') no-repeat center center/cover;
   backdrop-filter: blur(10px); /* Blurry effect */
-  padding: 15px;
+  padding: 150px;
   text-align: center;
 }
 
@@ -34,14 +34,6 @@ nav a {
   font-weight: bold;
   padding: 10px 20px;
   display: inline-block;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Hover animation & shape change for tabs */
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  transform: scale(1.1);
 }
 
 /* Main content */
@@ -49,38 +41,6 @@ h2 {
   padding: 20px;
   text-align: center;
   color: #5596ca;
-  animation: blink-animation 0.5s infinite alternate ease-in-out;
-}
-
-@keyframes blink-animation {
-  0% { opacity: 1; }
-  100% { opacity: 0.5; }
-}
-
-.left-reference {
-  font-size: 12px;
-  line-height: 2;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px; /* Ensures profile section is below */
-}
-
-/* Profile section */
-.logo-section {
-  text-align: center;
-  padding: 20px;
-}
-
-.artist-pic {
-  width: 150px;
-  border-radius: 15px; /* Curved square shape */
-  display: block;
-  margin: 0 auto 10px;
-}
-
-.intro-text {
-  font-size: 14px;
-  text-align: center;
 }
 
 /* Art Showcase */
@@ -96,24 +56,23 @@ h2 {
 }
 
 .art-table td {
-  padding: 5px; /* Reduced gap */
+  padding: 10px;
   text-align: center;
-  border: 2px solid black; /* Black border for showcase */
+  border: 2px solid black;
+  vertical-align: top;
 }
 
+/* Standardized image size */
 .art-table img {
-  width: 600px; /* Standardized size */
-  height: 600px;
-  object-fit: cover;
+  width: 500px; /* Adjusted for consistency */
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Footer styles */
-footer {
-  background-color: #1a1a1a;
-  padding: 20px;
-  text-align: center;
-  color: #ffffff;
+/* Description under each image */
+.art-description {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
 }
-
-/* Mentioning novel.html for later use */
-/* Sub-page: novel.html will be linked to display PDFs */
