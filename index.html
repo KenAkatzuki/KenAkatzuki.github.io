@@ -1,63 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Love and Peace</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <table>
-        <tr>
-          <td><a href="#" class="active">I am here</a></td>
-          <td><a href="#">Nothing</a></td>
-          <td><a href="#">You know me</a></td>
-          <td><a href="#">117</a></td>
-          <td><a href="#">47</a></td>
-        </tr>
-      </table>
-    </nav>
-  </header>
-  
-  <aside class="logo-section">
-    <img src="https://i.ibb.co/Kp7gTyhQ/images.png" alt="Artist Picture" class="artist-pic">
-    <p class="intro-text">Welcome to my art world! I create anime-inspired works and explore the beauty of nostalgia. Enjoy your stay!</p>
-  </aside>
-  
-  <main>
-    <article>
-      <h2>Welcome to the Goddess Hotline</h2>
-      <p class="left-reference">「私はすべての生徒が偉大になる可能性を持っていると信じています。それは彼らの才能を引き出すための正しい方法を見つける問題です。」</p>
-    </article>
-    
-    <section class="gallery">
-      <h3>Art Showcase</h3>
-      <table class="art-table">
-        <tr>
-          <td><img src="https://i.ibb.co/r2NXBJtL/lowkey.jpg" alt="Lowkey"></td>
-          <td><img src="https://i.ibb.co/LX4kDSXm/hollow.jpg" alt="Hollow"></td>
-        </tr>
-        <tr>
-          <td><img src="https://i.ibb.co/KpwtWjwH/kkawa.jpg" alt="Kkawa"></td>
-          <td>More art coming soon...</td>
-        </tr>
-      </table>
-      <p>Leave a comment:</p>
-      <script src="https://utteranc.es/client.js"
-        repo="KenAkatzuki/KenAkatzuki.github.io"
-        issue-term="pathname"
-        label="Subete no watashi wa watashi no tame ni."
-        theme="github-dark"
-        crossorigin="anonymous"
-        async>
-      </script>
-    </section>
-  </main>
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  <footer>
-    <p>"See you, Space Cowboy..." - A Certain Femme Fatale</p>
-  </footer>
-</body>
-</html>
+body, html {
+  font-family: "MS Gothic", Arial, sans-serif;
+  background-color: lavender;
+}
+
+/* Blurry image background for nav bar */
+header {
+  background: url('https://i.ibb.co/whTsrryW/val.png') no-repeat center center/cover;
+  backdrop-filter: blur(10px); /* Blurry effect */
+  padding: 150px;
+  text-align: center;
+}
+
+nav table {
+  width: 100%;
+  text-align: center;
+}
+
+nav td {
+  padding: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* Main content */
+h2 {
+  padding: 20px;
+  text-align: center;
+  color: #5596ca;
+}
+
+/* Art Showcase */
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.art-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.art-table td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid black;
+  vertical-align: top;
+}
+
+/* Standardized image size */
+.art-table img {
+  width: 500px; /* Adjusted for consistency */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Description under each image */
+.art-description {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
