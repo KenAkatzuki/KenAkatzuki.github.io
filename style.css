@@ -80,20 +80,19 @@ h2 {
   margin: 10px auto;
 }
 
-/* Centered Intro Text */
-/* Typing Effect for Intro Text */
-.typing-text {
-  display: inline-block;
-  font-size: 14px;
+/* Typing animation */
+.typing-container {
   text-align: center;
-  border-right: 2px solid black; /* Cursor effect */
+  font-size: 16px;
+  font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 4s steps(50, end) forwards, blink 0.8s infinite;
+  border-right: 2px solid black; /* Cursor effect */
+  display: inline-block;
   width: 0; /* Start hidden */
+  animation: typing 4s steps(40, end) forwards, blink 0.6s infinite;
 }
 
-/* Typing Keyframes */
 @keyframes typing {
   from {
     width: 0;
@@ -103,13 +102,11 @@ h2 {
   }
 }
 
-/* Cursor Blinking Effect */
 @keyframes blink {
   50% {
     border-color: transparent;
   }
 }
-
 
 /* Art Showcase */
 .gallery {
