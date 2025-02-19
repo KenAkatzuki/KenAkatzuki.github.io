@@ -76,3 +76,14 @@ h2 {
   font-weight: bold;
   margin-top: 5px;
 }
+
+/* Profile Image - Retro Style */
+.artist-pic {
+  width: 120px; /* Small, like a 90s website author profile */
+  height: 120px;
+  border-radius: 15px; /* Curved square */
+  border: 2px solid black; /* Retro frame */
+  display: block;
+  margin: 10px auto;
+}
+
