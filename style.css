@@ -80,33 +80,11 @@ h2 {
   margin: 10px auto;
 }
 
-/* Typing animation */
-.typing-container {
+.welcome-text {
   text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  border-right: 2px solid black; /* Cursor effect */
-  animation: typing 4s steps(40, end) forwards, remove-cursor 0.1s 4s forwards;
-}
-
-/* Typing animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* Remove cursor after typing */
-@keyframes remove-cursor {
-  to {
-    border-right: none;
-  }
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 20px;
 }
 
 /* Art Showcase */
