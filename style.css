@@ -34,6 +34,14 @@ nav a {
   font-weight: bold;
   padding: 10px 20px;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover animation & shape change for tabs */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transform: scale(1.1);
 }
 
 /* Main content */
@@ -41,6 +49,42 @@ h2 {
   padding: 20px;
   text-align: center;
   color: #5596ca;
+  animation: blink-animation 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes blink-animation {
+  0% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+.left-reference {
+  font-size: 12px;
+  line-height: 2;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px; /* Ensures profile section is below */
+}
+
+/* Profile section */
+.logo-section {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Profile Image - Retro Style */
+.artist-pic {
+  width: 200px; /* Adjusted width */
+  border-radius: 15px; /* Curved square shape */
+  border: 2px solid black; /* Retro frame */
+  display: block;
+  margin: 10px auto;
+}
+
+/* Centered Intro Text */
+.intro-text {
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Art Showcase */
@@ -56,34 +100,25 @@ h2 {
 }
 
 .art-table td {
-  padding: 10px;
+  padding: 5px; /* Reduced gap */
   text-align: center;
-  border: 2px solid black;
-  vertical-align: top;
+  border: 2px solid black; /* Black border for showcase */
 }
 
-/* Standardized image size */
+/* Standardized Art Image Size */
 .art-table img {
-  width: 500px; /* Adjusted for consistency */
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width: 600px; /* Standardized size */
+  height: 600px;
+  object-fit: cover;
 }
 
-/* Description under each image */
-.art-description {
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 5px;
+/* Footer styles */
+footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
 }
 
-/* Profile Image - Retro Style */
-.artist-pic {
-  width: 120px; /* Small, like a 90s website author profile */
-  height: 120px;
-  border-radius: 15px; /* Curved square */
-  border: 2px solid black; /* Retro frame */
-  display: block;
-  margin: 10px auto;
-}
-
+/* Mentioning novel.html for later use */
+/* Sub-page: novel.html will be linked to display PDFs */
