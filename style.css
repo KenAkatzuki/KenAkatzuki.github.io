@@ -108,7 +108,6 @@ h2 {
 /* Standardized Art Image Size */
 .art-table img {
   width: 600px; /* Standardized size */
-  height: 600px;
   object-fit: contain;
 }
 
