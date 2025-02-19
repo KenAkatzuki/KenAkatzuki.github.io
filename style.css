@@ -81,11 +81,35 @@ h2 {
 }
 
 /* Centered Intro Text */
-.intro-text {
+/* Typing Effect for Intro Text */
+.typing-text {
+  display: inline-block;
   font-size: 14px;
   text-align: center;
-  padding: 10px;
+  border-right: 2px solid black; /* Cursor effect */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(50, end) forwards, blink 0.8s infinite;
+  width: 0; /* Start hidden */
 }
+
+/* Typing Keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor Blinking Effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 
 /* Art Showcase */
 .gallery {
