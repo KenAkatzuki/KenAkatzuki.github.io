@@ -1,31 +1,42 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
+  // Tab switching functionality
   function changeTab(tabId) {
-    document.querySelectorAll(".tab-content").forEach(tab => {
-      tab.classList.add("hidden");
+    // Hide all tab content
+    document.querySelectorAll(".tab-content").forEach((tab) => {
+      tab.classList.remove("active");
     });
-    document.getElementById(tabId).classList.remove("hidden");
+
+    // Show the selected tab
+    document.getElementById(tabId).classList.add("active");
   }
 
-  // Random login image selection
-  const loginImages = [
-    "https://via.placeholder.com/30?text=1",
-    "https://via.placeholder.com/30?text=2",
-    "https://via.placeholder.com/30?text=3"
-  ];
-  document.getElementById("login-img").src = loginImages[Math.floor(Math.random() * loginImages.length)];
+  // Attach event listeners to navbar links
+  document.querySelectorAll(".navbar a").forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const tabId = this.getAttribute("onclick").match(/'([^']+)'/)[1];
+      changeTab(tabId);
+    });
+  });
 
-  // Timezone display
-  const timeDisplay = document.getElementById("time-display");
-  const timezoneSelect = document.getElementById("timezone-select");
+  // Initialize the first tab as active
+  changeTab("home");
 
-  function updateTime() {
-    const timezone = timezoneSelect.value;
-    const now = new Date();
-    const options = { timeZone: timezone, hour: '2-digit', minute: '2-digit', second: '2-digit' };
-    timeDisplay.textContent = new Intl.DateTimeFormat('en-US', options).format(now);
+  // Search functionality
+  function searchContent() {
+    let input = document.getElementById("search").value.toLowerCase();
+    let tableRows = document.querySelectorAll("#game-list tbody tr");
+
+    tableRows.forEach((row) => {
+      let gameName = row.cells[0].textContent.toLowerCase();
+      if (gameName.includes(input)) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
   }
 
-  timezoneSelect.addEventListener("change", updateTime);
-  setInterval(updateTime, 1000);
-  updateTime(); // Initial call
+  // Attach search function to input event
+  document.getElementById("search").addEventListener("input", searchContent);
 });
