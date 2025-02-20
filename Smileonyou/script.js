@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   fetchRandomLogo();
 
-  // Time Display
+ // Time Display
   function updateTime() {
     const timeZone = document.getElementById("time-selector").value;
     const now = new Date();
@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("time-selector").addEventListener("change", updateTime);
   setInterval(updateTime, 1000);
   updateTime();
+});
 
   // Search Bar Fix
   const searchContainer = document.getElementById("search-container");
