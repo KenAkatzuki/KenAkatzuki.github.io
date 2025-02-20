@@ -9,63 +9,50 @@
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav>
+    <img id="logo" src="" alt="Random Logo">
+    
     <ul class="navbar">
-      <li><a href="#" onclick="changeTab('home')">Home</a></li>
-      <li><a href="#" onclick="changeTab('compatibility')">Game Compatibility</a></li>
-      <li><a href="#" onclick="changeTab('tools')">Tools & Resources</a></li>
-      <li><a href="#" onclick="changeTab('news')">News & Updates</a></li>
-      <li>
-        <input type="text" id="search" placeholder="Search..." oninput="searchContent()">
-      </li>
+      <li><a href="#" onclick="changeTab('chamber')">Chamber</a></li>
+      <li><a href="#" onclick="changeTab('record')">Record</a></li>
+      <li><a href="#" onclick="changeTab('assets')">Assets</a></li>
+      <li><a href="#" onclick="changeTab('bledblade')">BledBlade</a></li>
     </ul>
+
+    <div id="search-container">
+      <input type="text" id="search" placeholder="Search...">
+    </div>
+
+    <div>
+      <select id="time-selector">
+        <option value="UTC">UTC</option>
+        <option value="Asia/Tokyo">JST</option>
+      </select>
+      <span id="time-display"></span>
+    </div>
   </nav>
 
+  <!-- Main Content -->
   <main id="content">
-    <section id="home" class="tab-content">
-      <h1>Welcome to the Linux Gaming Hub</h1>
-      <p>Your source for Linux gaming compatibility, tools, and updates.</p>
+    <section id="chamber" class="tab-content active">
+      <h1>Chamber</h1>
+      <p>Welcome to the Linux Gaming Hub!</p>
     </section>
 
-    <section id="compatibility" class="tab-content hidden">
-      <h1>Game Compatibility</h1>
-      <p>Find out which games run on Linux!</p>
-      <table id="game-list">
-        <thead>
-          <tr>
-            <th>Game</th>
-            <th>Compatibility</th>
-            <th>Tested With</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cyberpunk 2077</td>
-            <td>Gold</td>
-            <td>Proton Experimental</td>
-          </tr>
-          <tr>
-            <td>Elden Ring</td>
-            <td>Platinum</td>
-            <td>Proton Experimental</td>
-          </tr>
-        </tbody>
-      </table>
+    <section id="record" class="tab-content">
+      <h1>Record</h1>
+      <p>Compatibility testing and results.</p>
     </section>
 
-    <section id="tools" class="tab-content hidden">
-      <h1>Tools & Resources</h1>
-      <p>Useful links for Linux gaming:</p>
-      <ul>
-        <li><a href="https://www.protondb.com/" target="_blank">ProtonDB</a></li>
-        <li><a href="https://lutris.net/" target="_blank">Lutris</a></li>
-        <li><a href="https://github.com/GloriousEggroll/proton-ge-custom" target="_blank">Proton GE Custom</a></li>
-      </ul>
+    <section id="assets" class="tab-content">
+      <h1>Assets</h1>
+      <p>Useful tools and resources.</p>
     </section>
 
-    <section id="news" class="tab-content hidden">
-      <h1>News & Updates</h1>
-      <p>Stay up to date with the latest in Linux gaming.</p>
+    <section id="bledblade" class="tab-content">
+      <h1>BledBlade</h1>
+      <p>Latest updates and news.</p>
     </section>
   </main>
 
