@@ -1,47 +1,133 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Dark Theme Background */
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  text-align: center;
+  background-color: #121212; /* Darkest background */
+  color: #e0e0e0; /* Light gray for readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  background: #1e1e1e; /* Dark gray navbar */
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
   display: flex;
-  justify-content: center;
-  background-color: #111;
-  padding: 10px;
   list-style: none;
+  gap: 15px;
 }
 
 .navbar li {
-  margin: 0 15px;
+  display: inline;
 }
 
 .navbar a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  transition: 0.3s;
   font-weight: bold;
 }
 
 .navbar a:hover {
-  color: #0f0;
+  background: #ff9800; /* Orange hover effect */
+  color: #121212;
+  border-radius: 5px;
 }
 
-#login-img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+/* Search Bar */
+#search {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 10px;
 }
 
-.hidden {
-  display: none;
+/* Content Styling */
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 60px; /* Push below fixed navbar */
 }
 
 .tab-content {
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   margin-top: 20px;
+  display: none;
 }
 
-#time-display {
-  margin-left: 10px;
-  font-weight: bold;
+.tab-content h1 {
+  color: #ff9800; /* Orange for headings */
+}
+
+.tab-content p {
+  font-size: 16px;
+}
+
+/* Show Active Tab */
+.tab-content.active {
+  display: block;
+}
+
+/* Game Compatibility Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  background: #333;
+  color: #ff9800;
+}
+
+tr:hover {
+  background: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #search {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
 }
