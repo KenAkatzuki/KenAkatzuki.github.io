@@ -42,9 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("time-selector").addEventListener("change", updateTime);
   setInterval(updateTime, 1000);
-  updateTime(); // Initialize
+  updateTime();
 
-  // Collapsible Search Bar
+  // Search Bar Fix
   const searchContainer = document.getElementById("search-container");
   const searchInput = document.getElementById("search");
 
@@ -58,17 +58,4 @@ document.addEventListener("DOMContentLoaded", function () {
       searchContainer.classList.remove("active");
     }
   });
-
-  // Search Functionality
-  function searchContent() {
-    let input = searchInput.value.toLowerCase();
-    let tableRows = document.querySelectorAll("#game-list tbody tr");
-
-    tableRows.forEach((row) => {
-      let gameName = row.cells[0].textContent.toLowerCase();
-      row.style.display = gameName.includes(input) ? "" : "none";
-    });
-  }
-
-  searchInput.addEventListener("input", searchContent);
 });
