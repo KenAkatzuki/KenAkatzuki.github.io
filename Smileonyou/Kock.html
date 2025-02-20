@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smile on You</title>
-  <link rel="stylesheet" href="Kock.css">
-  <script src="./Smileonyou/Kock.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -14,6 +14,17 @@
       <li><a href="#" onclick="changeTab('ahoy')">Ahoy</a></li>
       <li><a href="#" onclick="changeTab('status')">Status</a></li>
       <li><a href="#" onclick="changeTab('author')">Mr.k</a></li>
+      <li>
+        <img id="login-img" src="" alt="Login Icon">
+      </li>
+      <li>
+        <select id="timezone-select">
+          <option value="UTC">UTC</option>
+          <option value="GMT">GMT</option>
+          <option value="JST">JST</option>
+        </select>
+        <span id="time-display"></span>
+      </li>
     </ul>
   </nav>
 
