@@ -1,38 +1,40 @@
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Arial", sans-serif;
-}
-
-/* Retro Violet-Pink Theme */
-body {
-  background-color: #10002b; /* Deep dark purple */
-  color: #e0b3ff; /* Soft neon violet text */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-}
-
-/* Navbar */
+/* Navbar Layout Fix */
 nav {
-  width: 100%;
-  background: #29003a; /* Darker purple */
-  padding: 12px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 20px;
+  background: #29003a;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Navbar Sections */
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.navbar.left {
+  margin-right: auto;
+}
+
+.navbar.right {
+  margin-left: auto;
+}
+
+.navbar.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Logo */
+#logo-container {
+  display: flex;
+  align-items: center;
+}
+
 #logo {
   height: 40px;
   width: 40px;
@@ -40,6 +42,11 @@ nav {
 }
 
 /* Time Display */
+#time-container {
+  display: flex;
+  align-items: center;
+}
+
 #time-selector {
   color: #e0b3ff;
   background: #3d005f;
@@ -54,34 +61,19 @@ nav {
   margin-left: 10px;
 }
 
-/* Navbar Links */
-.navbar {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-}
-
-.navbar li {
-  display: inline;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #ff66cc; /* Neon pink */
-  padding: 10px 15px;
-  transition: 0.3s;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  background: #ff66cc;
-  color: #10002b;
-  border-radius: 5px;
-}
-
-/* Collapsible Search Bar */
+/* Search Bar Visibility Fix */
 #search-container {
   position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#search-icon {
+  color: #ff66cc;
+  font-size: 18px;
+  margin-right: 5px;
+  transition: 0.3s;
 }
 
 #search {
@@ -95,7 +87,6 @@ nav {
   transition: width 0.3s ease, opacity 0.3s ease;
 }
 
-#search:focus,
 #search-container.active #search {
   width: 150px;
   opacity: 1;
@@ -104,36 +95,7 @@ nav {
   border: 1px solid #ff66cc;
 }
 
-/* Content Styling */
-main {
-  width: 90%;
-  max-width: 1000px;
-  margin-top: 80px; /* Adjusted for fixed navbar */
-}
-
-.tab-content {
-  padding: 20px;
-  background: #29003a;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-  margin-top: 20px;
-  display: none;
-}
-
-.tab-content h1 {
-  color: #ff66cc;
-}
-
-.tab-content p {
-  font-size: 16px;
-}
-
-/* Show Active Tab */
-.tab-content.active {
-  display: block;
-}
-
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
@@ -142,10 +104,6 @@ main {
 
   #search {
     margin-top: 10px;
-    width: 100%;
-  }
-
-  main {
     width: 100%;
   }
 }
