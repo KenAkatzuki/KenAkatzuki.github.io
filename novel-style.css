@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lavender;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.novel-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.novel-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.pdf-container {
+  width: 80%;
+  height: 80vh;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
