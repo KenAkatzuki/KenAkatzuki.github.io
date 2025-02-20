@@ -1,0 +1,98 @@
+/* Reset & General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(45deg, #ff7eb3, #ff758c);
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  text-shadow: 0 0 10px white;
+}
+
+/* Right Section (Time + Theme Toggle) */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#time-display {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Dark/Light Mode Button */
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* Intro Section */
+.intro {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background: linear-gradient(45deg, #222, #444);
+}
+
+.dark-mode #theme-toggle {
+  color: yellow;
+}
