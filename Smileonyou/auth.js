@@ -1,5 +1,5 @@
-const SUPABASE_URL = "YOUR_SUPABASE_URL";
-const SUPABASE_KEY = "YOUR_SUPABASE_ANON_KEY";
+const SUPABASE_URL = "https://wgokrthcxbakqmoksois.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indnb2tydGhjeGJha3Ftb2tzb2lzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAwMTcxNDcsImV4cCI6MjA1NTU5MzE0N30.UjspoapugXQb4UEfNTMHiUIF8rOp8E6gKqRbPLOtqsg";
 const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 document.getElementById("login-form").addEventListener("submit", async function(event) {
