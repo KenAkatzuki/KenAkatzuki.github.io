@@ -3,34 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Art Showcase</title>
+  <title>Smile on You</title>
   <link rel="stylesheet" href="Kock.css">
-  <script defer src="script.js"></script>
+  <script src="Kock.js" defer></script>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Art Haven</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Tools</a></li>
-        <li><a href="#">Resources</a></li>
-      </ul>
-      <div class="right-section">
-        <span id="time-display"></span> <!-- Time Display -->
-        <button id="theme-toggle">🌙</button> <!-- Dark/Light Mode Toggle -->
-      </div>
-    </nav>
-  </header>
+  <nav>
+    <ul class="navbar">
+      <li><a href="#" onclick="changeTab('ahoy')">Ahoy</a></li>
+      <li><a href="#" onclick="changeTab('status')">Status</a></li>
+      <li><a href="#" onclick="changeTab('author')">Mr.k</a></li>
+    </ul>
+  </nav>
 
-  <!-- Main Content -->
-  <main>
-    <section class="intro">
-      <h1>Welcome to the Art Showcase</h1>
-      <p>Discover amazing art and creative tools!</p>
+  <main id="content">
+    <section id="ahoy" class="tab-content">
+      <h1>Ahoy</h1>
+      <p>Welcome to Smile on You! Explore creative works and tools.</p>
+    </section>
+
+    <section id="status" class="tab-content hidden">
+      <h1>Status</h1>
+      <p>Here, you can track updates and progress.</p>
+    </section>
+
+    <section id="author" class="tab-content hidden">
+      <h1>Mr.k (Author)</h1>
+      <p>About the creator of this space.</p>
     </section>
   </main>
 
